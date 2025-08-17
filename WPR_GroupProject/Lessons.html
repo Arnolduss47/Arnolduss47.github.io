@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoLearn - Lessons</title>
+    <link rel="stylesheet" href="stylelessons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <article class="header">
+                <section id="logo">
+                    <img class="logo" src="Images/HalfEarthHalfCity-removebg-preview.png" alt="Website Logo">
+                </section>
+                <section id="title">
+                    <h1>EcoLearn</h1>
+                </section>
+                <section id="nav">
+                    <button onclick="window.location.href='./Menu.html'" class="button">Menu</button>
+                    <button onclick="window.location.href='./Lessons.html'" class="button-selected" disabled>Lessons</button>
+                    <button onclick="window.location.href='./Quiz.html'" class="button">Quiz</button>
+                    <button onclick="window.location.href='./Resources.html'" class="button">Resources</button>
+                </section>
+            </article>
+        </header>
+
+        <div class="sidebar">
+            <h1>Lessons</h1>
+            <ul>
+                <li><a href="#" onclick="hideAllContentDivs();document.getElementsByClassName('div-content-overview')[0].style.display='block';">Overview</a></li>
+                <li><a href="#" onclick="hideAllContentDivs();document.getElementsByClassName('div-content-lesson1')[0].style.display='block';">Lesson 1</a></li>
+                <li><a href="#" onclick="hideAllContentDivs();document.getElementsByClassName('div-content-lesson2')[0].style.display='block';">Lesson 2</a></li>
+                <li><a href="#" onclick="hideAllContentDivs();document.getElementsByClassName('div-content-lesson3')[0].style.display='block';">Tips</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="content div-content-overview" style="display: block;">
+                <h2>Overview</h2>
+                <p>You will learn:</p>
+                <ul>
+                    <li><p>What sustainability means</p></li>
+                    <li><p>Why sustainability matters</p></li>
+                    <li><p>How to live sustainably</p></li>
+                </ul>
+            </div>
+            <div class="content div-content-lesson1" style="display: none;">
+                <h2>Lesson 1: What is Sustainability?</h2>
+                <p>Sustainability is about making choices that protect the Earth while meeting human needs. It means using resources like water, energy, and land in ways that do not harm the environment or limit the ability of future generations to survive.
+                <br>
+                <br>For example, if we cut down forests faster than they can regrow, we lose biodiversity and damage the climate. But if we use resources carefully, nature can recover, and people can continue to benefit.
+                <br>
+                <br>Environmental sustainability is one part of the bigger picture of sustainability, alongside social and economic aspects. Together, they aim to create a balanced, fair, and healthy future for everyone.</p>
+            </div>
+            <div class="content div-content-lesson2" style="display: none;">
+                <h2>Lesson 2: Why Sustainability Matters</h2>
+                <p>Sustainability is essential because it helps protect life on Earth. Our planet has limited resources, and if we waste or pollute them, future generations will face serious challenges. Protecting biodiversity means keeping plants, animals, and ecosystems safe. For example, bees pollinate crops, forests clean the air, and wetlands filter water. When these systems are destroyed, humans also suffer. Sustainability also plays a big role in reducing climate change by lowering greenhouse gas emissions. Cleaner energy, less waste, and responsible consumption help slow global warming. By living sustainably, we not only protect the environment but also ensure better health, cleaner communities, and stronger economies.
+                <br>
+                <br>Living sustainably does not always mean making huge lifestyle changes. Even small actions can have a big impact if many people take part. The principle of “Reduce, Reuse, Recycle” is a good place to start:
+                <br>
+                </p>
+                <ul>
+                    <li><p>Reduce waste by buying only what you need and avoiding single-use plastics.</p></li>
+                    <li><p>Reuse items like bags, bottles, and clothing instead of throwing them away.</p></li>
+                    <li><p>Recycle materials such as paper, glass, and plastic to keep them out of landfills.</p></li>
+                </ul>
+                <p>
+                <br>Another important step is to save energy and water. Simple habits like turning off unused lights, taking shorter showers, or switching to energy-efficient appliances reduce strain on natural resources. Supporting renewable energy — like solar or wind power — instead of fossil fuels also helps reduce pollution. By making these choices, we protect the planet while improving our quality of life.
+                </p>
+            </div>
+            <div class="content div-content-lesson3" style="display: none;">
+                <h2>Tips to follow:</h2>
+                <p>-Reduce, Reuse, Recycle
+                <br>-Use renewable energy (solar, wind, hydro)
+                <br>-Save water and energy</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            &copy; 2025 Climate Change Awareness Project. All rights reserved.
+        </footer>
+    </div>1
+</body>
+
+<script>
+function hideAllContentDivs(){
+  var contentDivs = document.getElementsByClassName('content');
+  for (var i = 0; i < contentDivs.length; ++i) {
+      var div = contentDivs[i];  
+      div.style.display='none';
+  }
+};
+</script>
+
+</html>
