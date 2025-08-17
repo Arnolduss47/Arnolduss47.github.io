@@ -1,11 +1,10 @@
-<!DOCTYPE html
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoLearn - Quiz</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="container">
@@ -18,17 +17,20 @@
                     <h1>EcoLearn</h1>
                 </section>
                 <section id="nav">
-                    <button onclick="window.location.href='./index.html'" class="button">Menu</button>
-                    <button onclick="window.location.href='./Lessons.html'" class="button">Lessons</button>
-                    <button onclick="window.location.href='./Quiz.html'" class="button-selected" disabled>Quiz</button>
-                    <button onclick="window.location.href='./Resources.html'" class="button">Resources</button>
+                    <ul class="nav-menu">
+                        <li><button onclick="window.location.href='./About.html'" class="button">About</button></li>
+                        <li><button onclick="window.location.href='./Menu.html'" class="button">Menu</button></li>
+                        <li><button onclick="window.location.href='./Lessons.html'" class="button">Lessons</button></li>
+                        <li><button onclick="window.location.href='#'" class="button-selected" disabled>Quiz</button></li>
+                        <li><button onclick="window.location.href='./Resources.html'" class="button">Resources</button></li>
+                        <li><button onclick="window.location.href='./Contact.html'" class="button">Contact</button></li>
+                    </ul>
                 </section>
             </article>
         </header>
 
         <main>
-            <div id="quiz">
-            <h1>Test your knowledge! Here are sample questions you can place in forms:</h1>
+             <h1>Test your knowledge! Here are sample questions you can place in forms:</h1>
                 <form class="quiz-form">
                     <label for="question1">1. True/False: Recycling plastic bottles helps reduce pollution.</label><br>
                     <input type="radio" id="q1_true" name="question1" value="true">
@@ -49,7 +51,6 @@
 
                     <input class="button" type="submit" value="Submit">
                 </form>
-            </div>
         </main>
 
         <footer class="footer">
@@ -57,7 +58,7 @@
         </footer>
     </div>
 </body>
-    <script>
+<script>
         document.querySelector("form").addEventListener("submit", function(event) {
             event.preventDefault(); 
 
@@ -85,11 +86,11 @@
             };
 
                 q1_correct.style.color = "green";
-                q1_incorrect.style.color = "red";
+                q1_incorrect.style.color = "white";
 
                 q2_correct.style.color = "green";
-                q2_incorrect.style.color = "red";
-                q2_incorrect2.style.color = "red";
+                q2_incorrect.style.color = "white";
+                q2_incorrect2.style.color = "white";
 
             var score = 0;
             if (results.question1 === "true") {

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoLearn - Lessons</title>
     <link rel="stylesheet" href="stylelessons.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="container">
@@ -18,10 +17,14 @@
                     <h1>EcoLearn</h1>
                 </section>
                 <section id="nav">
-                    <button onclick="window.location.href='./index.html'" class="button">Menu</button>
-                    <button onclick="window.location.href='./Lessons.html'" class="button-selected" disabled>Lessons</button>
-                    <button onclick="window.location.href='./Quiz.html'" class="button">Quiz</button>
-                    <button onclick="window.location.href='./Resources.html'" class="button">Resources</button>
+                    <ul class="nav-menu">
+                    <li><button onclick="window.location.href='./About.html'" class="button">About</button></li>
+                    <li><button onclick="window.location.href='./Menu.html'" class="button">Menu</button></li>
+                    <li><button onclick="window.location.href='#'" class="button-selected" disabled>Lessons</button></li>
+                    <li><button onclick="window.location.href='./Quiz.html'" class="button">Quiz</button></li>
+                    <li><button onclick="window.location.href='./Resources.html'" class="button">Resources</button></li>
+                    <li><button onclick="window.location.href='./Contact.html'" class="button">Contact</button></li>
+                </ul>
                 </section>
             </article>
         </header>
@@ -41,58 +44,99 @@
                 <h2>Overview</h2>
                 <p>You will learn:</p>
                 <ul>
-                    <li><p>What sustainability means</p></li>
-                    <li><p>Why sustainability matters</p></li>
-                    <li><p>How to live sustainably</p></li>
+                    <li>What sustainability means</li>
+                    <li>Why sustainability matters</li>
+                    <li>How to live sustainably</li>
                 </ul>
             </div>
+
             <div class="content div-content-lesson1" style="display: none;">
                 <h2>Lesson 1: What is Sustainability?</h2>
-                <p>Sustainability is about making choices that protect the Earth while meeting human needs. It means using resources like water, energy, and land in ways that do not harm the environment or limit the ability of future generations to survive.
-                <br>
-                <br>For example, if we cut down forests faster than they can regrow, we lose biodiversity and damage the climate. But if we use resources carefully, nature can recover, and people can continue to benefit.
-                <br>
-                <br>Environmental sustainability is one part of the bigger picture of sustainability, alongside social and economic aspects. Together, they aim to create a balanced, fair, and healthy future for everyone.</p>
+                <p>Sustainability is about making choices that protect the Earth while meeting human needs. It means using resources like water, energy, and land responsibly so future generations can survive.</p>
+                <p>For example, if forests are cut down faster than they regrow, biodiversity suffers and the climate is damaged. Responsible usage allows nature to recover, benefiting both the planet and humans.</p>
+                <h3>Comparison of sustainable vs unsustainable practices:</h3>
+                <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+                    <tr style="background-color: #16601a; color: white;">
+                        <th>Action</th>
+                        <th>Sustainable Approach</th>
+                        <th>Unsustainable Approach</th>
+                    </tr>
+                    <tr style="background-color: #e0f5e0;">
+                        <td>Energy</td>
+                        <td>Use solar or wind power</td>
+                        <td>Burn coal or petrol</td>
+                    </tr>
+                    <tr style="background-color: #f0fdf0;">
+                        <td>Water</td>
+                        <td>Short showers, fix leaks</td>
+                        <td>Overuse or wastage</td>
+                    </tr>
+                    <tr style="background-color: #e0f5e0;">
+                        <td>Food</td>
+                        <td>Buy local & seasonal</td>
+                        <td>Excessive packaging, imported goods</td>
+                    </tr>
+                </table>
             </div>
+
             <div class="content div-content-lesson2" style="display: none;">
                 <h2>Lesson 2: Why Sustainability Matters</h2>
-                <p>Sustainability is essential because it helps protect life on Earth. Our planet has limited resources, and if we waste or pollute them, future generations will face serious challenges. Protecting biodiversity means keeping plants, animals, and ecosystems safe. For example, bees pollinate crops, forests clean the air, and wetlands filter water. When these systems are destroyed, humans also suffer. Sustainability also plays a big role in reducing climate change by lowering greenhouse gas emissions. Cleaner energy, less waste, and responsible consumption help slow global warming. By living sustainably, we not only protect the environment but also ensure better health, cleaner communities, and stronger economies.
-                <br>
-                <br>Living sustainably does not always mean making huge lifestyle changes. Even small actions can have a big impact if many people take part. The principle of “Reduce, Reuse, Recycle” is a good place to start:
-                <br>
-                </p>
+                <p>Sustainability protects life on Earth. Our planet has limited resources; waste and pollution affect future generations. Protecting biodiversity ensures plants, animals, and ecosystems thrive. Healthy ecosystems provide food, clean air, and water. Sustainability also reduces climate change by lowering greenhouse gas emissions.</p>
                 <ul>
-                    <li><p>Reduce waste by buying only what you need and avoiding single-use plastics.</p></li>
-                    <li><p>Reuse items like bags, bottles, and clothing instead of throwing them away.</p></li>
-                    <li><p>Recycle materials such as paper, glass, and plastic to keep them out of landfills.</p></li>
+                    <li>Reduce waste: Buy only what you need, avoid single-use plastics</li>
+                    <li>Reuse items: Bags, bottles, clothing</li>
+                    <li>Recycle: Paper, glass, plastic</li>
                 </ul>
-                <p>
-                <br>Another important step is to save energy and water. Simple habits like turning off unused lights, taking shorter showers, or switching to energy-efficient appliances reduce strain on natural resources. Supporting renewable energy — like solar or wind power — instead of fossil fuels also helps reduce pollution. By making these choices, we protect the planet while improving our quality of life.
-                </p>
+                <p>Saving energy and water is another key step. Turn off unused lights, take shorter showers, use energy-efficient appliances. Support renewable energy like solar or wind to reduce pollution. Small daily actions, when multiplied, can create a big impact.</p>
+                <h3>Practical Examples:</h3>
+                <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+                    <tr style="background-color: #16601a; color: white;">
+                        <th>Area</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr style="background-color: #e0f5e0;">
+                        <td>Home</td>
+                        <td>Turn off lights, recycle, use energy-efficient appliances</td>
+                    </tr>
+                    <tr style="background-color: #f0fdf0;">
+                        <td>Travel</td>
+                        <td>Walk, cycle, carpool, use public transport</td>
+                    </tr>
+                    <tr style="background-color: #e0f5e0;">
+                        <td>Food</td>
+                        <td>Eat plant-based meals, buy local, reduce food waste</td>
+                    </tr>
+                    <tr style="background-color: #f0fdf0;">
+                        <td>Energy</td>
+                        <td>Install solar panels, use smart thermostats, unplug devices</td>
+                    </tr>
+                </table>
             </div>
+
             <div class="content div-content-lesson3" style="display: none;">
-                <h2>Tips to follow:</h2>
-                <p>-Reduce, Reuse, Recycle
-                <br>-Use renewable energy (solar, wind, hydro)
-                <br>-Save water and energy</p>
+                <h2>Tips to follow</h2>
+                <ul>
+                    <li>Reduce, Reuse, Recycle</li>
+                    <li>Use renewable energy (solar, wind, hydro)</li>
+                    <li>Save water and energy</li>
+                    <li>Support local, eco-friendly businesses</li>
+                    <li>Educate others about sustainable practices</li>
+                </ul>
             </div>
         </div>
 
         <footer class="footer">
             &copy; 2025 Climate Change Awareness Project. All rights reserved.
         </footer>
-    </div>1
-</body>
+    </div>
 
 <script>
-function hideAllContentDivs(){
-  var contentDivs = document.getElementsByClassName('content');
-  for (var i = 0; i < contentDivs.length; ++i) {
-      var div = contentDivs[i];  
-      div.style.display='none';
-  }
-};
+    function hideAllContentDivs(){
+    var contentDivs = document.getElementsByClassName('content');
+        for (var i = 0; i < contentDivs.length; ++i) {
+            contentDivs[i].style.display='none';
+        }
+    };
 </script>
-
-
+</body>
 </html>

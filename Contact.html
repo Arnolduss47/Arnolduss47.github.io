@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoLearn - Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+    .contact-container {
+      background-color: #f9f9f9; 
+      max-width: 600px;           
+      height: 600px;             
+      margin: 40px auto;          
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;     
+    }
+
+    .contact-container h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+      width: 100%;
+      font-size: 1.2em;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .contact-form input[type="submit"] {
+      cursor: pointer;
+      background-color: #16601a;
+      color: white;
+      border: none;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .contact-form input[type="submit"]:hover {
+      background-color: rgba(22, 94, 25, 0.8);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <article class="header">
+        <section id="logo">
+          <img class="logo" src="Images/HalfEarthHalfCity-removebg-preview.png" alt="Website Logo">
+        </section>
+        <section id="title">
+          <h1>EcoLearn</h1>
+        </section>
+        <section id="nav">
+          <ul class="nav-menu">
+              <li><button onclick="window.location.href='./About.html'" class="button">About</button></li>
+                    <li><button onclick="window.location.href='./Menu.html'" class="button">Menu</button></li>
+                    <li><button onclick="window.location.href='./Lessons.html'" class="button">Lessons</button></li>
+                    <li><button onclick="window.location.href='./Quiz.html'" class="button">Quiz</button></li>
+                    <li><button onclick="window.location.href='./Resources.html'" class="button">Resources</button></li>
+                    <li><button onclick="window.location.href='#'" class="button-selected" disabled>Contact</button></li>
+          </ul>
+        </section>
+      </article>
+    </header>
+
+    <main>
+      <div class="contact-container">
+        <h1>Contact Us</h1>
+        <form class="contact-form" id="contactForm" action="send_email.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <input type="submit" value="Send Message">
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      &copy; 2025 Climate Change Awareness Project. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event){
+      event.preventDefault();
+      alert("Thank you for your message! We'll get back to you soon.");
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
