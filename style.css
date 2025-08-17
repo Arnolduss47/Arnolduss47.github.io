@@ -88,14 +88,15 @@ main div p{
 }
 
 .button {
-    
-    padding: 20px;
+    padding: 10px;
     border-radius: 24px;
     border: 4px solid RGBA(0, 128, 0, 0.9);
     background-color: RGBA(255, 255, 255, 0.4);
     font-size: large;
     color: black;
     transition: all 0.5s ease;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .button:hover {
@@ -104,13 +105,15 @@ main div p{
 }
 
 .button-selected {
-    padding: 20px;
+    padding: 10px;
     border-radius: 24px;
     transform: scale(1.1);
     border: 4px solid RGBA(128, 0, 128, 0.9);
     font-size: large;
     color: black;
     filter: invert(0.9);
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .main {
