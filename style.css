@@ -48,27 +48,29 @@ main div p{
   display: inline-block;
 }
 
-/* Style the dropdown button */
 .dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-left: auto;
+    position: absolute;
+    bottom: 0;
 }
 
-/* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
+  top: 100%;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -76,17 +78,14 @@ main div p{
   display: block;
 }
 
-/* Change link color on hover */
 .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
 
-/* Show the dropdown content on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Change button color on hover */
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
