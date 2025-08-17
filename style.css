@@ -37,6 +37,33 @@ main div p{
     'footer';
 }
 
+.container-lessons {
+    display: grid;
+    left: 0px;
+    grid-template-areas:
+    'header header header header header'
+    'sidebar main main main main'
+    'sidebar main main main main'
+    'footer footer footer footer footer';
+}
+
+.container-lessons .main {
+    grid-area: main;
+    padding: 10px;
+    text-align: center;
+    font-size: 10vw;
+    z-index: 1;
+    text-align: left;
+    font-size: x-large;
+    z-index: 2;
+}
+
+.container-lessons .sidebar {
+    grid-area: sidebar;
+    padding: 10px;
+    background-color: rgb(220, 255, 220);
+}
+
 .logo {
     width: 50%;
     height: width;
@@ -89,7 +116,7 @@ main div p{
   background-color: #f1f1f1;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content, .dropdown-content:hover, .dropdown:hover .dropdown-content {
   display: block;
 }
 
@@ -176,13 +203,13 @@ main div p{
     margin-bottom: 10px;
 }
 
-  ul {
+ header  ul {
     list-style-type: none;
     padding: 5px;
     margin: 5px;
 }
 
-  li {
+  header li {
     display: inline;
     margin-right: 5px;
 }
@@ -342,8 +369,8 @@ main div p{
         }
     }
 
-@media screen and (max-width: 1025px) { /*1020 is the exact moment it peeks over, 5px for safety*/
-  .container, .main, .main #content {
+@media screen and (max-width: 1100px) {
+  .container, .container-lessons, .main, .main #content {
     display: block;
     width: auto;
     height: auto;
@@ -359,7 +386,7 @@ main div p{
   }
 
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1100px) {
   .dropdown {
     display: none;
   }
