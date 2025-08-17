@@ -40,17 +40,22 @@
             </article>
         </header>
 
-        <div class="sidebar">
+        <div class="sidebar-lessons">
             <h1>Lessons</h1>
             <ul>
-                <li><a href="#" onclick="hideAllContentDivs();document.getElementsByClassName('div-content-overview')[0].style.display='block';">Overview</a></li>
-                <li><a href="#" onclick="hideAllContentDivs();document.getElementsByClassName('div-content-lesson1')[0].style.display='block';">Lesson 1</a></li>
-                <li><a href="#" onclick="hideAllContentDivs();document.getElementsByClassName('div-content-lesson2')[0].style.display='block';">Lesson 2</a></li>
-                <li><a href="#" onclick="hideAllContentDivs();document.getElementsByClassName('div-content-lesson3')[0].style.display='block';">Tips</a></li>
+                <li><a href="#" onclick="hideAllContentDivs();document.getElementsByClassName('div-content-overview')[0].style.display='block';">> Overview</a></li>
+                <div class="dropdown-lessons">
+                <a class="dropbtn-lessons">v Lessons</a>
+                <div class="dropdown-content-lessons">
+                    <li><a href="#" onclick="hideAllContentDivs();document.getElementsByClassName('div-content-lesson1')[0].style.display='block';">Lesson 1</a></li>
+                    <li><a href="#" onclick="hideAllContentDivs();document.getElementsByClassName('div-content-lesson2')[0].style.display='block';">Lesson 2</a></li>
+                </div>
+                </div>
+                <li><a href="#" onclick="hideAllContentDivs();document.getElementsByClassName('div-content-lesson3')[0].style.display='block';">> Tips</a></li>
             </ul>
         </div>
 
-        <div class="main">
+        <div class="main-lessons">
             <div class="content div-content-overview" style="display: block;">
                 <h2>Overview</h2>
                 <p>You will learn:</p>

@@ -21,6 +21,11 @@ main div p{
     padding: 20px;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 .quiz-form {
     gap: 12px;
     padding: 20px;
@@ -47,7 +52,7 @@ main div p{
     'footer footer footer footer footer';
 }
 
-.container-lessons .main {
+.container-lessons .main-lessons {
     grid-area: main;
     padding: 10px;
     text-align: center;
@@ -56,12 +61,22 @@ main div p{
     text-align: left;
     font-size: x-large;
     z-index: 2;
+    max-width: auto;
 }
 
-.container-lessons .sidebar {
+.container-lessons .sidebar-lessons {
     grid-area: sidebar;
     padding: 10px;
     background-color: rgb(220, 255, 220);
+    width: 200px;
+}
+
+.container-lessons .sidebar-lessons ul {
+    padding: 20px;
+}
+
+.container-lessons .sidebar-lessons ul li {
+    padding: 10px 0;
 }
 
 .logo {
@@ -369,8 +384,47 @@ main div p{
         }
     }
 
+.dropdown-lessons {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn-lessons {
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content-lessons {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content-lessons a {
+  color: black;
+  background-color: rgb(22, 94, 25);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content-lessons a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-lessons:hover .dropdown-content-lessons {
+  display: block;
+}
+
+.dropdown-lessons:hover .dropbtn-lessons {
+  background-color: #3e8e41;
+}
+
 @media screen and (max-width: 1100px) {
-  .container, .container-lessons, .main, .main #content {
+  .container, .container-lessons, .main, .main #content, .main-lessons {
     display: block;
     width: auto;
     height: auto;
@@ -384,6 +438,11 @@ main div p{
   .dropdown {
     display: block;
   }
+
+  .sidebar-lessons {
+    max-width: none;
+    min-width: 100%;
+}
 
 }
 @media screen and (min-width: 1100px) {
