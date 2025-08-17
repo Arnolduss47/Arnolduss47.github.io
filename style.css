@@ -219,8 +219,7 @@ main div p{
       font-size: 2em;
     }
 
-    .contact-form input, 
-    .contact-form textarea {
+    .contact-form input, .contact-form textarea {
       width: 100%;
       font-size: 1.2em;
       padding: 10px;
