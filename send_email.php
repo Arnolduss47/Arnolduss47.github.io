@@ -3,8 +3,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
     $message = htmlspecialchars($_POST['message']);
-    
-    $to = "603340@student.belgiumcampus.ac.za";
+
+    $to = "marno.hennops@gmail.com";
     $subject = "New Form Submission";
     $body = "Name: $name\nEmail: $email\nMessage: $message";
     $headers = "From: $email";
