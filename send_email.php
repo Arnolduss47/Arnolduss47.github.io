@@ -1,11 +1,4 @@
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
 <?php
-
-require 'hmail/PHPMailer/src/Exception.php';
-require 'hmail/PHPMailer/src/PHPMailer.php';
-require 'hmail/PHPMailer/src/SMTP.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (
@@ -26,26 +19,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-    $mail = new PHPMailer(true);
+    $to = "marno.hennops@gmail.com";
+    $subject = "New Form Submission";
+    $body = "Name: $name\nEmail: $email\nMessage: $message";
+    $headers = "From: $email\r\nReply-To: $email\r\n";
 
-    try {
-        $mail->isSMTP();
-        $mail->Host = 'localhost';
-        $mail->Port = 25;
-        $mail->SMTPAuth = false;
-        // $mail->Username = 'your_username';
-        // $mail->Password = 'your_password';
-
-        $mail->setFrom('603340@student.belgiumcampus.co.za', 'Website Contact');
-        $mail->addAddress('marno.hennops@gmail.com');
-
-        $mail->Subject = 'New Form Submission';
-        $mail->Body    = "Name: $name\nEmail: $email\nMessage: $message";
-        $mail->AltBody = $mail->Body;
-
-        $mail->send();
+    if (mail($to, $subject, $body, $headers)) {
         echo "Thank you for your message. We will get back to you soon.";
-    } catch (Exception $e) {
+    } else {
         echo "There was a problem sending your message. Please try again later.";
     }
 }
