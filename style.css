@@ -44,8 +44,10 @@ main div p{
 }
 
 .dropdown {
-  position: relative;
+  position: absolute;
   display: inline-block;
+  right: 0px;
+  top: 38px;
 }
 
 .dropbtn {
@@ -59,12 +61,14 @@ main div p{
     margin-left: auto;
     position: absolute;
     bottom: 0;
+    right: 0;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   top: 100%;
+  right: 0px;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
@@ -73,7 +77,7 @@ main div p{
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 12px 12px;
   text-decoration: none;
   display: block;
 }
