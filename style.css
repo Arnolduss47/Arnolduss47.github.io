@@ -80,9 +80,11 @@ ul {
 }
 
 .logo {
-    width: 50%;
-    height: width;
+    width: 45%;
+    height: auto;
     background-color: rgb(220, 255, 220);
+    padding-left: 25px;
+    padding-right: 25px;
     border-radius:50px;
     min-width: 80px;
 }
@@ -200,6 +202,7 @@ ul {
     margin-right: 5px;
     margin-bottom: 10px;
     font-family: inherit;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -406,18 +409,25 @@ ul {
   min-width: 160px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .dropdown-content-lessons a {
-  color: black;
+  color: white;
   background-color: rgb(22, 94, 25);
-  padding: 12px 16px;
+  padding: 8px 8px;
   text-decoration: none;
+  backdrop-filter: Blur(5px);
   display: block;
+  border-radius: 20px;
 }
 
 .dropdown-content-lessons a:hover {
-  background-color: #f1f1f1;
+  background-color: #f1f1f188;
+  color: black;
+  transition: 0.1s;
+  border-radius: 20px;
 }
 
 .dropdown-lessons:hover .dropdown-content-lessons {
@@ -426,6 +436,7 @@ ul {
 
 .dropdown-lessons:hover .dropbtn-lessons {
   background-color: #3e8e41;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 1100px) {
