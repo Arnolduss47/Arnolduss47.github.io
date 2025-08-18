@@ -306,7 +306,7 @@ ul {
             cursor: pointer;
         }
     
-    .contact-container {
+.contact-container {
       background-color: #f9f9f9; 
       max-width: 600px;           
       height: 600px;             
@@ -319,13 +319,13 @@ ul {
       justify-content: center;     
     }
 
-    .contact-container h1 {
+.contact-container h1 {
       text-align: center;
       margin-bottom: 20px;
       font-size: 2em;
     }
 
-    .contact-form input, .contact-form textarea {
+.contact-form input, .contact-form textarea {
       width: 100%;
       font-size: 1.2em;
       padding: 10px;
@@ -334,7 +334,7 @@ ul {
       border-radius: 4px;
     }
 
-    .contact-form input[type="submit"] {
+.contact-form input[type="submit"] {
       cursor: pointer;
       background-color: #16601a;
       color: white;
@@ -342,7 +342,7 @@ ul {
       transition: transform 0.2s, background-color 0.2s;
     }
 
-    .contact-form input[type="submit"]:hover {
+.contact-form input[type="submit"]:hover {
       background-color: rgba(22, 94, 25, 0.8);
       transform: scale(1.05);
     }
@@ -359,37 +359,43 @@ ul {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    .about-block img {
+
+.about-block img {
         width: 100%;
         border-radius: 10px;
         transition: transform 0.3s, box-shadow 0.3s;
     }
-    .about-block img:hover {
+
+ .about-block img:hover {
         transform: scale(1.05);
         box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     }
-    .about-text h2 {
+
+.about-text h2 {
         color: #16601a;
         margin-bottom: 15px;
     }
-    .about-text p, .about-text ul {
+
+.about-text p, .about-text ul {
         font-size: 1.2em;
         line-height: 1.6;
     }
-    .about-text ul {
+
+.about-text ul {
         margin-left: 20px;
     }
-    @media(min-width: 768px) {
-        .about-block {
-            grid-template-columns: 1fr 1fr;
-            align-items: center;
-        }
-        .about-block:nth-child(even) {
-            direction: rtl;
-        }
-        .about-block:nth-child(even) .about-text {
-            direction: ltr;
-        }
+
+@media(min-width: 768px) {
+    .about-block {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .about-block:nth-child(even) {
+        direction: rtl;
+    }
+    .about-block:nth-child(even) .about-text {
+        direction: ltr;
+    }
     }
 
 .dropdown-lessons {
