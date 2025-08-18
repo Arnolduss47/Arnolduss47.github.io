@@ -84,6 +84,7 @@ ul {
     height: width;
     background-color: rgb(220, 255, 220);
     border-radius:50px;
+    min-width: 80px;
 }
 
 .dropdown {
